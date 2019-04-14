@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="TOP_LEFT" disable="false" focusTraversable="true" gridLinesVisible="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="694.9999000000025" prefWidth="960.9999000000025" snapToPixel="false" visible="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <ImageView id="linear-gradient.png" fitHeight="694.9998779296875" fitWidth="965.0" visible="true" GridPane.columnIndex="2" GridPane.rowIndex="0">
+      <image>
+        <Image url="@linear-gradient.png" preserveRatio="true" smooth="true" />
+      </image>
+      <GridPane.margin>
+        <Insets right="240.0" />
+      </GridPane.margin>
+    </ImageView>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" height="31.921875" stroke="BLACK" strokeType="INSIDE" width="59.701171875" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.valignment="CENTER">
+      <fill>
+        <RadialGradient fx:value="radial-gradient(focus-angle 0.0deg, focus-distance 0.0% , center 100.0px 100.0px, radius 200.0px, 0xfeccb1ff 0.0%, 0xf17432ff 50.0%, 0xea5507ff 51.0%, 0xfb955eff 100.0%)" fx:id="x1" />
+      </fill>
+      <GridPane.margin>
+        <Insets top="100.0" fx:id="x2" />
+      </GridPane.margin>
+    </Rectangle>
+    <Text scaleX="3.25407661331244" scaleY="2.596629721518498" strokeType="OUTSIDE" strokeWidth="0.0" text="Sterowanie" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <font>
+        <Font name="Impact" size="12.0" fx:id="x10" />
+      </font>
+      <GridPane.margin>
+        <Insets top="40.0" fx:id="x5" />
+      </GridPane.margin>
+    </Text>
+    <Rectangle fx:id="buttonW" arcHeight="5.0" arcWidth="5.0" fill="$x1" height="31.921875" stroke="BLACK" strokeType="INSIDE" width="59.701171875" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <GridPane.margin>
+        <Insets top="80.0" />
+      </GridPane.margin>
+    </Rectangle>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="31.921875" stroke="BLACK" strokeType="INSIDE" width="59.701171875" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.valignment="CENTER">
+      <GridPane.margin>
+        <Insets right="130.0" top="100.0" fx:id="x4" />
+      </GridPane.margin>
+    </Rectangle>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="31.921875" stroke="BLACK" strokeType="INSIDE" strokeWidth="1.0" width="59.701171875" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.valignment="CENTER">
+      <GridPane.margin>
+        <Insets left="130.0" top="100.0" fx:id="x3" />
+      </GridPane.margin>
+    </Rectangle>
+    <Label text="W" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <font>
+        <Font name="Impact" size="18.0" fx:id="x8" />
+      </font>
+      <GridPane.margin>
+        <Insets top="85.0" />
+      </GridPane.margin>
+    </Label>
+    <Label font="$x8" text="S" GridPane.columnIndex="0" GridPane.margin="$x2" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Label font="$x8" text="D" GridPane.columnIndex="0" GridPane.margin="$x3" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Label font="$x8" text="A" GridPane.columnIndex="0" GridPane.margin="$x4" GridPane.rowIndex="0" GridPane.valignment="CENTER" />
+    <Text font="$x10" scaleX="3.25407661331244" scaleY="2.596629721518498" strokeType="OUTSIDE" strokeWidth="0.0" text="Biegi" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.margin="$x5" GridPane.rowIndex="1" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="31.921875" stroke="BLACK" strokeType="INSIDE" width="59.701171875" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+      <GridPane.margin>
+        <Insets right="140.0" top="70.0" fx:id="x6" />
+      </GridPane.margin>
+    </Rectangle>
+    <Label font="$x8" text="G" GridPane.columnIndex="0" GridPane.rowIndex="1">
+      <GridPane.margin>
+        <Insets right="140.0" top="100.0" />
+      </GridPane.margin>
+    </Label>
+    <Text font="$x10" scaleX="3.25407661331244" scaleY="2.596629721518498" strokeType="OUTSIDE" strokeWidth="0.0" text="Silnik" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.margin="$x5" GridPane.rowIndex="2" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="31.921875" stroke="BLACK" strokeType="INSIDE" width="59.701171875" GridPane.columnIndex="0" GridPane.margin="$x6" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+    <Label font="$x8" text="E" GridPane.columnIndex="0" GridPane.margin="$x6" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+    <Text fx:id="speedValue" fill="radial-gradient(focus-angle 0.0deg, focus-distance 0.0% , center 100.0px 100.0px, radius 200.0px, 0xa90329ff 0.0%, 0x8f0222ff 44.0%, 0x6d0019ff 100.0%)" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="0" translateX="56.0" wrappingWidth="0.0" GridPane.columnIndex="0" GridPane.rowIndex="3">
+      <font>
+        <Font name="Impact" size="120.0" />
+      </font>
+      <GridPane.margin>
+        <Insets right="100.0" />
+      </GridPane.margin>
+    </Text>
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ON" GridPane.columnIndex="0" GridPane.rowIndex="2">
+      <GridPane.margin>
+        <Insets right="140.0" top="75.0" />
+      </GridPane.margin>
+    </Text>
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="OFF" GridPane.columnIndex="0" GridPane.rowIndex="2">
+      <GridPane.margin>
+        <Insets left="140.0" top="75.0" />
+      </GridPane.margin>
+    </Text>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="31.921875" stroke="BLACK" strokeType="INSIDE" width="59.701171875" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+      <GridPane.margin>
+        <Insets left="140.0" top="70.0" fx:id="x7" />
+      </GridPane.margin>
+    </Rectangle>
+    <Label font="$x8" text="F" GridPane.columnIndex="0" GridPane.margin="$x7" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="31.921875" stroke="BLACK" strokeType="INSIDE" width="59.701171875" GridPane.columnIndex="0" GridPane.margin="$x7" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Label font="$x8" text="H" GridPane.columnIndex="0" GridPane.margin="$x7" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="UP" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+      <GridPane.margin>
+        <Insets right="140.0" top="20.0" />
+      </GridPane.margin>
+    </Text>
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DOWN" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+      <GridPane.margin>
+        <Insets left="140.0" top="20.0" />
+      </GridPane.margin>
+    </Text>
+    <Text id="gearValue" fx:id="biegValue2" fill="BLACK" fontSmoothingType="LCD" opacity="0.1" scaleX="1.0" scaleY="1.0" smooth="true" strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="LEFT" translateX="1.0" translateY="1.0" wrappingWidth="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="BOTTOM">
+      <font>
+        <Font name="Impact" size="60.0" fx:id="x11" />
+      </font>
+      <GridPane.margin>
+        <Insets fx:id="x9" />
+      </GridPane.margin>
+    </Text>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="radial-gradient(focus-angle 0.0deg, focus-distance 0.0% , center 100.0px 100.0px, radius 200.0px, 0xfac695ff 0.0%, 0xf5ab66ff 47.0%, 0xef8d31ff 100.0%)" height="109.16815185546875" stroke="BLACK" strokeType="INSIDE" width="166.416015625" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+    <Text id="messageToUser" fx:id="wiadomosc" fill="#330000" scaleX="0.8436614858795883" scaleY="1.4729735006247398" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="CENTER" translateY="11.0" wrappingWidth="190.390625" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+      <font>
+        <Font name="Impact" size="20.0" fx:id="x13" />
+      </font>
+      <GridPane.margin>
+        <Insets bottom="40.0" />
+      </GridPane.margin>
+    </Text>
+    <Text font="$x10" scaleX="3.25407661331244" scaleY="2.596629721518498" strokeType="OUTSIDE" strokeWidth="0.0" text="Wiadomość" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP">
+      <GridPane.margin>
+        <Insets top="25.0" />
+      </GridPane.margin>
+    </Text>
+    <Text id="gearValue" fx:id="biegValue1" fill="BLACK" font="$x11" fontSmoothingType="LCD" opacity="0.1" scaleX="1.0" scaleY="1.0" smooth="true" strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="LEFT" translateX="1.0" translateY="1.0" wrappingWidth="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="0" GridPane.valignment="TOP" />
+    <Text id="gearValue" fx:id="biegValue4" fill="BLACK" font="$x11" fontSmoothingType="LCD" opacity="0.1" scaleX="1.0" scaleY="1.0" smooth="true" strokeType="OUTSIDE" strokeWidth="0.0" text="4" textAlignment="LEFT" translateX="1.0" translateY="1.0" wrappingWidth="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+    <Text id="gearValue" fx:id="biegValue3" fill="BLACK" font="$x11" fontSmoothingType="LCD" opacity="0.1" scaleX="1.0" scaleY="1.0" smooth="true" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="LEFT" translateX="1.0" translateY="1.0" wrappingWidth="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+    <Text id="gearValue" fx:id="biegValue6" fill="BLACK" font="$x11" fontSmoothingType="LCD" opacity="0.1" scaleX="1.0" scaleY="1.0" smooth="true" strokeType="OUTSIDE" strokeWidth="0.0" text="6" textAlignment="LEFT" translateX="1.0" translateY="1.0" wrappingWidth="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+    <Text id="gearValue" fx:id="biegValue5" fill="BLACK" font="$x11" fontSmoothingType="LCD" opacity="0.1" scaleX="1.0" scaleY="1.0" smooth="true" strokeType="OUTSIDE" strokeWidth="0.0" text="5" textAlignment="LEFT" translateX="1.0" translateY="1.0" wrappingWidth="0.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+    <Text fx:id="engineStatus" fill="#1400ff" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ON" textAlignment="CENTER" translateX="1.0" translateY="1.0" wrappingWidth="73.94921875" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.margin="$x9" GridPane.rowIndex="3" GridPane.valignment="TOP">
+      <font>
+        <Font name="System Bold" size="41.0" />
+      </font>
+    </Text>
+    <Polygon disable="true" fill="radial-gradient(focus-angle 0.0deg, focus-distance 0.0% , center 100.0px 100.0px, radius 200.0px, 0xffb76bff 0.0%, 0xffa73dff 50.0%, 0xff7c00ff 51.0%, 0xff7f04ff 100.0%)" scaleX="4.65096379841174" scaleY="1.9076858310704674" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3">
+      <points>
+        <Double fx:value="-50.0" />
+        <Double fx:value="40.0" />
+        <Double fx:value="50.0" />
+        <Double fx:value="40.0" />
+        <Double fx:value="0.0" />
+        <Double fx:value="-60.0" />
+      </points>
+    </Polygon>
+    <Line fx:id="line" disable="false" endX="-852.9503173828125" endY="-292.9585876464844" focusTraversable="false" rotate="0.0" scaleZ="1.0" startX="-978.2469482421875" startY="-337.564697265625" stroke="#eb0a0a" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.margin="$x9" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+      <rotationAxis>
+        <Point3D z="1.0" />
+      </rotationAxis>
+    </Line>
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+      <font>
+        <Font name="Impact" size="30.0" fx:id="x12" />
+      </font>
+      <GridPane.margin>
+        <Insets bottom="18.0" right="50.0" />
+      </GridPane.margin>
+    </Text>
+    <Text font="$x12" strokeType="OUTSIDE" strokeWidth="0.0" text="6" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+      <GridPane.margin>
+        <Insets bottom="18.0" left="50.0" />
+      </GridPane.margin>
+    </Text>
+    <Text font="$x12" strokeType="OUTSIDE" strokeWidth="0.0" text="5" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+      <GridPane.margin>
+        <Insets bottom="18.0" left="60.0" />
+      </GridPane.margin>
+    </Text>
+    <Text font="$x12" strokeType="OUTSIDE" strokeWidth="0.0" text="4" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+      <GridPane.margin>
+        <Insets bottom="18.0" right="10.0" />
+      </GridPane.margin>
+    </Text>
+    <Text font="$x12" strokeType="OUTSIDE" strokeWidth="0.0" text="2" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+      <GridPane.margin>
+        <Insets bottom="18.0" right="60.0" />
+      </GridPane.margin>
+    </Text>
+    <Text font="$x12" strokeType="OUTSIDE" strokeWidth="0.0" text="3" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+      <GridPane.margin>
+        <Insets bottom="18.0" left="10.0" />
+      </GridPane.margin>
+    </Text>
+    <Text font="$x12" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+      <GridPane.margin>
+        <Insets bottom="50.0" left="30.0" />
+      </GridPane.margin>
+    </Text>
+    <Text font="$x12" strokeType="OUTSIDE" strokeWidth="0.0" text="30" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+      <GridPane.margin>
+        <Insets bottom="120.0" right="60.0" />
+      </GridPane.margin>
+    </Text>
+    <Text font="$x12" strokeType="OUTSIDE" strokeWidth="0.0" text="50" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+      <GridPane.margin>
+        <Insets right="30.0" top="10.0" />
+      </GridPane.margin>
+    </Text>
+    <Text font="$x12" strokeType="OUTSIDE" strokeWidth="0.0" text="80" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+      <GridPane.margin>
+        <Insets left="30.0" top="10.0" />
+      </GridPane.margin>
+    </Text>
+    <Text font="$x12" strokeType="OUTSIDE" strokeWidth="0.0" text="140" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+      <GridPane.margin>
+        <Insets bottom="120.0" left="60.0" />
+      </GridPane.margin>
+    </Text>
+    <Text font="$x12" strokeType="OUTSIDE" strokeWidth="0.0" text="180" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+      <GridPane.margin>
+        <Insets bottom="50.0" />
+      </GridPane.margin>
+    </Text>
+    <Text fill="radial-gradient(focus-angle 0.0deg, focus-distance 0.0% , center 100.0px 100.0px, radius 200.0px, 0xcc0000ff 0.0%, 0xcc0000ff 100.0%)" font="$x13" opacity="0.6" strokeType="OUTSIDE" strokeWidth="0.0" text="KM/H" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP">
+      <GridPane.margin>
+        <Insets top="60.0" />
+      </GridPane.margin>
+    </Text>
+    <Text fill="radial-gradient(focus-angle 0.0deg, focus-distance 0.0% , center 100.0px 100.0px, radius 200.0px, 0xcc0000ff 0.0%, 0xcc0000ff 100.0%)" font="$x13" opacity="0.6" strokeType="OUTSIDE" strokeWidth="0.0" text="GEAR" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+      <GridPane.margin>
+        <Insets bottom="70.0" />
+      </GridPane.margin>
+    </Text>
+    <ImageView id="background-1_0.png" fitHeight="465.0" fitWidth="474.096435546875" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="0" GridPane.rowSpan="3">
+      <image>
+        <Image url="@background-1_0.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <AnchorPane prefHeight="307.0" prefWidth="477.0482177734375" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="2">
+      <children>
+        <ImageView id="car.png" fx:id="carImage" fitHeight="96.5390625" fitWidth="95.9951171875" layoutX="192.0" layoutY="105.0" x="0.0" y="-10.0">
+          <image>
+            <Image url="@car.png" preserveRatio="true" smooth="true" />
+          </image>
+        </ImageView>
+      </children>
+    </AnchorPane>
+  </children>
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="483.0" minWidth="10.0" prefWidth="479.0" />
+    <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="483.0" minWidth="10.0" prefWidth="479.0" />
+    <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" maxWidth="619.0" minWidth="10.0" prefWidth="481.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="619.0" minWidth="10.0" prefWidth="481.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="206.0" minHeight="-Infinity" prefHeight="158.0" valignment="TOP" vgrow="NEVER" />
+    <RowConstraints maxHeight="275.0" minHeight="10.0" prefHeight="151.0" valignment="TOP" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="299.0" minHeight="10.0" prefHeight="155.0" valignment="TOP" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="235.0" minHeight="10.0" prefHeight="232.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+</GridPane>

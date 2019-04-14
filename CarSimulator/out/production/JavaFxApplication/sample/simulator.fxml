@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="362.0" minWidth="10.0" prefWidth="86.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="362.0" minWidth="10.0" prefWidth="86.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="362.0" minWidth="10.0" prefWidth="30.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="618.0" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="618.0" minWidth="10.0" prefWidth="300.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="327.0" minWidth="10.0" prefWidth="327.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="206.0" minHeight="10.0" prefHeight="206.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="275.0" minHeight="10.0" prefHeight="5.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="299.0" minHeight="10.0" prefHeight="102.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="208.0" minHeight="10.0" prefHeight="99.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="812.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowSpan="3" GridPane.valignment="TOP">
+         <image>
+             <Image url="@insideCar.jpg" />
+         </image>
+      </ImageView>
+      <Text fx:id="gearValue" fill="#a16161" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="JUSTIFY" translateX="80.0" translateY="10.0" wrappingWidth="30.1015625" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font size="50.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="20.0" right="10.0" />
+         </GridPane.margin>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ENGINE:" translateX="50.0" translateY="-20.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+      <Text fx:id="engineStatus" fill="#f5e7e7" strokeType="OUTSIDE" strokeWidth="0.0" text="OFF" textAlignment="JUSTIFY" translateX="50.0" translateY="10.0" wrappingWidth="73.94921875" GridPane.columnIndex="4" GridPane.rowIndex="1">
+         <font>
+            <Font size="41.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="40.0" />
+         </GridPane.margin>
+      </Text>
+
+       <Text fx:id="speedValue" strokeType="OUTSIDE" strokeWidth="0.0" text="0" translateX="56.0" wrappingWidth="95.6357421875" GridPane.columnIndex="3" GridPane.rowIndex="1">
+           <font>
+               <Font name="System Bold" size="55.0" />
+           </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+       </Text>
+      <Text fx:id="messageToUser" fill="#e8dede" strokeType="OUTSIDE" strokeWidth="0.0" translateY="11.0" wrappingWidth="190.390625" GridPane.columnIndex="5" GridPane.rowIndex="2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#d3c4c4" strokeType="OUTSIDE" strokeWidth="0.0" text="Message" translateX="12.0" translateY="-36.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+      <GridPane visible="false" GridPane.columnIndex="5">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="engineOn" mnemonicParsing="false" onAction="#engineOnEventClicked" prefHeight="25.0" prefWidth="81.0" text="EngineOn">
+               <GridPane.margin>
+                  <Insets left="55.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="engineOff" layoutX="65.0" layoutY="100.0" mnemonicParsing="false" onAction="#engineOffEventClicked" prefHeight="25.0" prefWidth="84.0" text="EngineOff" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane visible="false" GridPane.columnIndex="5" GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#accelarateEventClicked" prefHeight="21.0" prefWidth="93.0" text="Accelerate" />
+            <Button mnemonicParsing="false" onAction="#brakeEventClicked" text="Brake" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onAction="#gearUpEventClicked" text="GearUp" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#gearDownEventClicked" text="GearDown" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Text fill="#ddd3d3" strokeType="OUTSIDE" strokeWidth="0.0" text="Start - s" GridPane.rowIndex="3" />
+      <Text fill="#e1d8d8" strokeType="OUTSIDE" strokeWidth="0.0" text="Pause - p" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Text fill="#ebe2e2" strokeType="OUTSIDE" strokeWidth="0.0" text="GearUp - U" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Text fill="#d7d4d4" strokeType="OUTSIDE" strokeWidth="0.0" text="GearDown - D     ArrowUp - Accelearte" GridPane.columnIndex="4" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets left="30.0" />
+         </GridPane.margin>
+      </Text>
+      <Text fill="#ddd6d6" strokeType="OUTSIDE" strokeWidth="0.0" text="ArrowDown - Brake" GridPane.columnIndex="5" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </Text>
+      <Accordion />
+      <Line fx:id="line" endX="100.0" startX="143.5" stroke="#eb0a0a" GridPane.columnIndex="5" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="10.0" left="60.0" top="70.0" />
+         </GridPane.margin>
+      </Line>
+   </children>
+</GridPane>
